@@ -4,66 +4,88 @@ import { Icon } from "astro-icon";
 
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Headers",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "In general, Headers contain information that makes it easier for visitors to interact with the website.",
+    icon: "flat-color-icons:template",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Heros",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
+      "If you want your website to get more than its fair share of visitors, the Hero section needs to be stellar.",
+    icon: "flat-color-icons:gallery",
   },
   {
-    title: "On-Demand Components",
+    title: "Features",
     description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
+      "Display your product in action and how the Features actually create a solution for your target customer.",
+    icon: "flat-color-icons:todo-list",
   },
   {
-    title: "Broad Integration",
+    title: "Content",
     description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    icon: "flat-color-icons:document",
   },
   {
-    title: "SEO Enabled",
+    title: "Call-to-Action",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    icon: "flat-color-icons:advertising",
   },
   {
-    title: "Community",
+    title: "Pricing",
     description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    icon: "flat-color-icons:currency-exchange",
+  },
+  {
+    title: "Testimonial",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    icon: "flat-color-icons:voice-presentation",
+  },
+  {
+    title: "Contact",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    icon: "flat-color-icons:business-contact",
+  },
+  {
+    title: "Footers",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    icon: "icon-park:page-template",
   },
 ];
 ---
 
-<div class="mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
-  </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
-  </p>
-</div>
+<div class="max-full bg-slate-50 lg:py-24 py-12">
+  <div class="max-w-screen-xl mx-auto px-5">
+    <div class="mt-16 md:mt-0">
+      <h2 class="text-3xl lg:text-5xl font-bold tracking-tighter text-center">
+        Dripsender Memudahkan Bisnis Anda
+      </h2>
+      <p class="lg:text-xl text-md mt-4 text-slate-600 text-center">
+        Apapun yang Anda butuhkan untuk mengelola bisnis dengan Whatsapp
+        marketing ada di sini
+      </p>
+    </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-  {
-    features.map((item) => (
-      <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
-          <Icon class="text-white" name={item.icon} />
-        </div>
-        <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
-        </div>
-      </div>
-    ))
-  }
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-8">
+      {
+        features.map((item) => (
+          <div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded shadow-lg hover:shadow-md transition border border-transparent dark:border-slate-800">
+            <div class="flex items-center">
+              <Icon name={item.icon} class="w-10 h-10" />
+              <div class="ml-4 text-xl font-bold">{item.title}</div>
+            </div>
+            <p class="text-slate-500 mt-1 leading-relaxed">
+              {item.description}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
 </div>

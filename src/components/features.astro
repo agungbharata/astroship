@@ -4,57 +4,48 @@ import { Icon } from "astro-icon";
 
 const features = [
   {
-    title: "Headers",
-    description:
-      "In general, Headers contain information that makes it easier for visitors to interact with the website.",
+    title: "List Building",
+    description: "Membangun list kontak database bisa dilakukan dengan sangat mudah dan cepat. Cukup 1-3 klik saja!",
     icon: "flat-color-icons:template",
   },
   {
-    title: "Heros",
-    description:
-      "If you want your website to get more than its fair share of visitors, the Hero section needs to be stellar.",
+    title: "Schedule Broadcast",
+    description: "Atur jadwal broadcast pesan promo untuk ribuan database, terkirim otomatis sesuai jadwal pengiriman broadcast",
     icon: "flat-color-icons:gallery",
   },
   {
-    title: "Features",
-    description:
-      "Display your product in action and how the Features actually create a solution for your target customer.",
+    title: "Interactive Broadcast",
+    description: "Kirim broadcast promo dengan berbagai tipe pesan seperti teks, tombol, daftar menu dan lainnya",
     icon: "flat-color-icons:todo-list",
   },
   {
-    title: "Content",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    title: "Boost Engagement",
+    description: "Bikin pesan broadcast Anda agar mudah direspon oleh penerima broadcast",
     icon: "flat-color-icons:document",
   },
   {
-    title: "Call-to-Action",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    title: "Autoreply Bot",
+    description: "Jawab pesan dari customer dengan cepat dan otomatis tanpa mengetik balasan secara manual",
     icon: "flat-color-icons:advertising",
   },
   {
     title: "Pricing",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
     icon: "flat-color-icons:currency-exchange",
   },
   {
     title: "Testimonial",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
     icon: "flat-color-icons:voice-presentation",
   },
   {
     title: "Contact",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
     icon: "flat-color-icons:business-contact",
   },
   {
     title: "Footers",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
     icon: "icon-park:page-template",
   },
 ];
@@ -63,12 +54,9 @@ const features = [
 <div class="max-full bg-slate-50 lg:py-24 py-12">
   <div class="max-w-screen-xl mx-auto px-5">
     <div class="mt-16 md:mt-0">
-      <h2 class="text-3xl lg:text-5xl font-bold tracking-tighter text-center">
-        Dripsender Memudahkan Bisnis Anda
-      </h2>
+      <h2 class="text-3xl lg:text-5xl font-bold tracking-tighter text-center">Dripsender Memudahkan Bisnis Anda</h2>
       <p class="lg:text-xl text-md mt-4 text-slate-600 text-center">
-        Apapun yang Anda butuhkan untuk mengelola bisnis dengan Whatsapp
-        marketing ada di sini
+        Apapun yang Anda butuhkan untuk mengelola bisnis dengan Whatsapp marketing ada di sini
       </p>
     </div>
 
@@ -80,9 +68,7 @@ const features = [
               <Icon name={item.icon} class="w-10 h-10" />
               <div class="ml-4 text-xl font-bold">{item.title}</div>
             </div>
-            <p class="text-slate-500 mt-1 leading-relaxed">
-              {item.description}
-            </p>
+            <p class="text-slate-500 mt-1 leading-relaxed">{item.description}</p>
           </div>
         ))
       }
